@@ -1,4 +1,42 @@
 ## Welcome to My Pages
+<head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Spacenew</title>
+<meta name="generator" content="Jekyll v3.9.2">
+<meta property="og:title" content="Welcome to My Pages">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="My Fist GitHub Pages">
+<meta property="og:description" content="My Fist GitHub Pages">
+<link rel="canonical" href="https://spacenew.ga/">
+<meta property="og:url" content="http://spacenew.ga/">
+<meta property="og:site_name" content="spacebox">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Welcome to My Pages">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"My Fist GitHub Pages","headline":"Welcome to My Pages","name":"spacebox","url":"http://spacenew.ga/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" as="style" type="text/css" crossorigin="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=e398a161416a8a883b6e007799117e238b8962bf">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
 Welcome to My Pages
 You can use the to maintain and preview the content for your website in Markdown files.
 
