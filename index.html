@@ -1,38 +1,185 @@
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+  <link rel="preconnect" href="https://github.githubassets.com" crossorigin="">
+  <link rel="preconnect" href="https://avatars.githubusercontent.com">
+
+
+
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/light-5178aee0ee76.css"><link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark-217d4f9c8e70.css"><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-0adfa28f0e68.css"><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-1c8575b36644.css"><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-5113d2be20b0.css"><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-c96add742484.css"><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-290f92f5e867.css"><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-cdd88f146bf7.css"><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-2171ea0f078b.css">
+  
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-e1b46f4d01ea.css">
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/global-0ca2e3bf0c0a.css">
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/github-64491393c52b.css">
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dashboard-f4b1d992339b.css">
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/site-b5d4628eb9e2.css">
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/home-06d3899b7964.css">
+
+
+
+  <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/wp-runtime-20fc6776f9e3.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_manuelpuyol_turbo_dist_turbo_es2017-esm_js-7ca92c8d513d.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_stacktrace-parser_dist_stack-trace-parser_esm_js-node_modules_github_bro-d351f6-c1d63d230b29.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/environment-41c17a6346e1.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_selector-observer_dist_index_esm_js-650337916dbd.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_details-dialog-elemen-63debe-4a2f37f7419e.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_github_auto-complete-element_dist_index_js-node_modules_github_catalyst_-6afc16-accdbcccdc1b.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_fzy_js_index_js-node_modules_github_markdown-toolbar-element_dist_index_js-6f74e8e38aad.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_github_time-elements_dist_index_js-74b4ec51ce20.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_github_filter--6a5bff-e7b3d0c97a2e.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/github-elements-49dd186cf077.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/element-registry-8abcde9b1a97.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_lit-html_lit-html_js-e954e8c01c93.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_github_paste-markdown_dist_index_esm_js-node_modules_koddsson_textarea-c-586f78-aad0fa01c792.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_github_remote-form_dist_-ece2b0-917c0dad4566.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_github_alive-client_dist_index_js-node_modules_github_memoize_dist_esm_i-fab77c-ff9d9fde6bc6.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_primer_behaviors_dist_esm_dimensions_js-node_modules_github_hydro-analyt-f69502-65a022907302.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_quote-sele-7bbf9f-45d498057c64.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/app_assets_modules_github_updatable-content_ts-62df1309213c.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/app_assets_modules_github_sticky-scroll-into-view_ts-6483ace64969.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/app_assets_modules_github_behaviors_keyboard-shortcuts-helper_ts-app_assets_modules_github_be-ac2ea2-fda9c90f5f33.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/app_assets_modules_github_behaviors_commenting_edit_ts-app_assets_modules_github_behaviors_ht-83c235-02b38260d85d.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/app_assets_modules_github_behaviors_batch-deferred-content_ts-app_assets_modules_github_behav-dc1370-638c27fd4547.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-e1b5c2d9b2db.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-06ff533-b01316754e20.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/notifications-global-e71e7f99b10d.js"></script>
+    <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-06ff530-1cf8f4ac78ac.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/app_assets_modules_github_discussions_voting_ts-app_assets_modules_github_fetch_ts-app_assets-bb2970-867f7ff17563.js"></script>
+<script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/dashboard-ffe29d2deaca.js"></script>
+
+
+  <title>GitHub</title>
+
+
+
     
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Đoàn Phúc Trạch</title>
-<meta name="generator" content="Jekyll v3.9.2">
-<meta property="og:title" content="Welcome to My Pages">
-<meta property="og:locale" content="en_US">
-<meta name="description" content="This is my first website">
-<meta property="og:description" content="This is my first website">
-<link rel="canonical" href="https://spacenew.ga/">
-<meta property="og:url" content="https://spacenew.ga/">
-<meta property="og:site_name" content="spacebox">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="Welcome to My Pages">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"My Fist GitHub Pages","headline":"Welcome to My Pages","name":"spacebox","url":"http://spacenew.ga/"}</script>
-<!-- End Jekyll SEO tag -->
+  <meta name="request-id" content="C36D:17EA:C8117C:D3A97E:63425205" data-turbo-transient="true"><meta name="html-safe-nonce" content="7fc1acf42ac6df0ccdfdfbf11f68a6c0a7b1c8c35cd4b3aa10f8bad9ece3d787" data-turbo-transient="true"><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6IkMzNkQ6MTdFQTpDODExN0M6RDNBOTdFOjYzNDI1MjA1IiwidmlzaXRvcl9pZCI6IjU3NDE0NTc5MTcyNjAwOTcxNjIiLCJyZWdpb25fZWRnZSI6InNvdXRoZWFzdGFzaWEiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-turbo-transient="true"><meta name="visitor-hmac" content="51809dfd30de15ba8ede6d174728f76c0b5d013a243ff3729be61e675d257374" data-turbo-transient="true">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com/">
-    <link rel="preload" href="./SpaceNew_files/css" as="style" type="text/css" crossorigin="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="./SpaceNew_files/style.css">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-<!-- Setup Google Analytics -->
+    <meta name="page-subject" content="GitHub">
+
+  <meta name="github-keyboard-shortcuts" content="dashboards" data-turbo-transient="true">
+  
+
+  <meta name="selected-link" value="/" data-turbo-transient="">
+
+    <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+  <meta name="google-site-verification" content="Apib7-x98H0j5cPqHWwSMm6dNU4GmODRoqxLiDzdx9I">
+
+<meta name="octolytics-url" content="https://collector.github.com/github/collect"><meta name="octolytics-actor-id" content="94669344"><meta name="octolytics-actor-login" content="spacetrue"><meta name="octolytics-actor-hash" content="df3afa322984b21535f6d7e6b5229d4b7fe63c2e0d4b66abae84a1ae050d66dd">
+
+  <meta name="analytics-location" content="/dashboard" data-turbo-transient="true">
+
+  
 
 
 
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
 
-<!-- end custom head snippets -->
+  
 
-  <link type="text/css" rel="stylesheet" charset="UTF-8" href="./SpaceNew_files/translateelement.css"></head>
+    <meta name="user-login" content="spacetrue">
+
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+
+    <meta name="viewport" content="width=device-width">
+    
+      <meta name="description" content="GitHub is where people build software. More than 83 million people use GitHub to discover, fork, and contribute to over 200 million projects.">
+      <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <meta property="fb:app_id" content="1401488693436528">
+    <meta name="apple-itunes-app" content="app-id=1477376905">
+      <meta property="og:url" content="https://github.com">
+      <meta property="og:site_name" content="GitHub">
+      <meta property="og:title" content="Build software better, together">
+      <meta property="og:description" content="GitHub is where people build software. More than 83 million people use GitHub to discover, fork, and contribute to over 200 million projects.">
+      <meta property="og:image" content="https://github.githubassets.com/images/modules/open_graph/github-logo.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="1200">
+      <meta property="og:image" content="https://github.githubassets.com/images/modules/open_graph/github-mark.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="620">
+      <meta property="og:image" content="https://github.githubassets.com/images/modules/open_graph/github-octocat.png">
+      <meta property="og:image:type" content="image/png">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="620">
+
+      <meta property="twitter:site" content="github">
+      <meta property="twitter:site:id" content="13334762">
+      <meta property="twitter:creator" content="github">
+      <meta property="twitter:creator:id" content="13334762">
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:title" content="GitHub">
+      <meta property="twitter:description" content="GitHub is where people build software. More than 83 million people use GitHub to discover, fork, and contribute to over 200 million projects.">
+      <meta property="twitter:image:src" content="https://github.githubassets.com/images/modules/open_graph/github-logo.png">
+      <meta property="twitter:image:width" content="1200">
+      <meta property="twitter:image:height" content="1200">
+    <link rel="assets" href="https://github.githubassets.com/">
+      <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/94669344/ws?session=eyJ2IjoiVjMiLCJ1Ijo5NDY2OTM0NCwicyI6OTY2MDI3MDAxLCJjIjozMzAyMjc0NzIzLCJ0IjoxNjY1MjkwNzY3fQ==--ebdab60b3a0b3b825150a64b4f62eec9690895231223711b863c63076568fcac" data-refresh-url="/_alive" data-session-id="9792c759092848dfc4a490cb8e0443b0dd23e48857e8e006ca12de91b33dc03d">
+      <link rel="shared-web-socket-src" href="/assets-cdn/worker/socket-worker-b87581f5816c.js">
+
+
+        <meta name="hostname" content="github.com">
+
+
+      <meta name="keyboard-shortcuts-preference" content="all">
+      <script type="application/json" id="memex_keyboard_shortcuts_preference">"all"</script>
+
+        <meta name="expected-hostname" content="github.com">
+
+    <meta name="enabled-features" content="ACTIONS_RUN_NAME,IMAGE_METRIC_TRACKING,GEOJSON_AZURE_MAPS,STRICT_DEFERRED_DIFF_LINES_CHECKS,STRICT_DEFERRED_DIFF_LINES_CHECKS_REPORTING">
+
+
+  <meta http-equiv="x-pjax-version" content="56a4ebbe6d3b54fed247608eed698499f18a0a7b39e0ef120d2bf9d938dffcf1" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-csp-version" content="fbf5aa8bdd6e37ffefb75b1e69535207f0f3c3a61553c8d37dc6bd75847e9a99" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-css-version" content="f9a0f1e3523cd0c60c6f6df449d6cbc088e32944e02e8ca54070acbe678fb09e" data-turbo-track="reload">
+  <meta http-equiv="x-pjax-js-version" content="a5eb21b78b9c7aaf4bc9c31efefec2716ebaa89a29411729b3e81cb9e059bdc9" data-turbo-track="reload">
+
+  <meta name="turbo-cache-control" content="no-preview" data-turbo-transient="">
+
+      <link rel="alternate" type="application/atom+xml" title="ATOM" href="/spacetrue.private.atom?token=AWSIUIDWQAQ7M7FSDW5UCHWBJ6CI6">
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/github-64491393c52b.css">
+
+
+
+  <meta name="turbo-body-classes" content="logged-in env-production page-responsive full-width">
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <meta name="browser-optimizely-client-errors-url" content="https://api.github.com/_private/browser/optimizely_client/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon-dark.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon-dark.svg">
+
+<meta name="theme-color" content="#1e2327">
+<meta name="color-scheme" content="light dark">
+
+
+  <link rel="manifest" href="/manifest.json" crossorigin="use-credentials">
+
+  </head>
